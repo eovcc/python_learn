@@ -155,11 +155,11 @@ def main():
     print(f"{len(mv_info)=}")
 
     # time.sleep(random.randint(2, 5)/10)
-    for mv in mv_info:
-        try:
-            collection.insert_one(mv)
-        except Exception as e:
-            print(str(e))
+    # for mv in mv_info:
+    #     try:
+    #         collection.insert_one(mv)
+    #     except Exception as e:
+    #         print(str(e))
 
     # 目标文件夹
     dest_fold = "reviews"

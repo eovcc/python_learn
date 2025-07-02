@@ -1,2 +1,6 @@
-.venv
+.venv/
+reviews/
+dist
+build
+*.mp4
 
