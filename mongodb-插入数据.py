@@ -13,7 +13,12 @@ def main():
     except:
         pass
 
-    rst = test_collection.find({"$where": "this._id > 0 && this._id%100 == 0"})
+    query = {"$where": "this._id > 0 && this._id % 100 == 0"}
+    """ count = test_collection.count_documents(query)
+    print(f"{count=}") """
+    rst = test_collection.find(query)
+    for item in rst:
+        print(item)
 
 
 if __name__ == "__main__":
