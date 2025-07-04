@@ -1,4 +1,6 @@
 .venv/
 reviews/
+dist
+build
 *.mp4
 
