@@ -14,6 +14,7 @@ def main():
         pass
 
     query = {"$where": "this._id > 0 && this._id % 100 == 0"}
+    # count_documents不能用$where
     """ count = test_collection.count_documents(query)
     print(f"{count=}") """
     rst = test_collection.find(query)
